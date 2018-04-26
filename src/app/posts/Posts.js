@@ -7,6 +7,7 @@ import spinner from '../common/spinner';
 import PostForm from './PostForm';
 import PostFeed from './PostFeed';
 
+
 class Posts extends Component {
   componentDidMount() {
     this.props.getPosts();

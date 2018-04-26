@@ -6,7 +6,9 @@ import {
     GET_POSTS,
     GET_POST,
     POSTS_LOADING,
-    DELETE_POST
+    DELETE_POST,
+    ADD_COMMENT,
+    GET_COMMENTS
 } from './types';
 
 export const addPost = postData => dispatch => {
@@ -73,3 +75,36 @@ export const setPostLoading = () => {
         type: POSTS_LOADING
     }
 }
+
+// Add Comment
+export const addComment = (postId, commentData) => dispatch => {
+    axios
+      .post(`http://localhost:9001/posts/${postId}/comments`, commentData)
+      .then(res =>
+        dispatch({
+          type: ADD_COMMENT,
+          payload: res.data
+        })
+      )
+      .catch(err =>
+        dispatch({
+          type: GET_ERRORS,
+          payload: err.response.data
+        })
+      );
+  };
+
+
+
+export const getComments = (id) => dispatch => {
+    axios
+        .get(`http://localhost:9001/posts/${id}/comments`)
+        .then(res =>
+        dispatch({
+            type: GET_COMMENTS,
+            payload: res.data
+        }))
+        .catch(err => console.log(err.response.data)
+        )
+}
+

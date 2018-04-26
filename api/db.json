@@ -102,6 +102,46 @@
       "user": "Natashia",
       "date": "2016-03-17",
       "content": "Nunc facilisis nisi vitae dapibus sodales. Proin vitae nunc turpis."
+    },
+    {
+      "content": "hello",
+      "postId": "2",
+      "id": 8
+    },
+    {
+      "content": "helloo!!!!",
+      "postId": "2",
+      "id": 9
+    },
+    {
+      "content": "This is a new comment",
+      "postId": "4",
+      "id": 10
+    },
+    {
+      "text": "dsdsmdsfds",
+      "postId": "4",
+      "id": 11
+    },
+    {
+      "text": "DSJSSDJ",
+      "postId": "3",
+      "id": 12
+    },
+    {
+      "text": "HELLO",
+      "postId": "3",
+      "id": 13
+    },
+    {
+      "text": "This is awesome",
+      "postId": "5",
+      "id": 14
+    },
+    {
+      "content": "hello!",
+      "postId": "2",
+      "id": 15
     }
   ]
 }

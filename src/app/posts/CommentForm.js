@@ -9,11 +9,6 @@ class CommentForm extends Component {
 constructor(props) {
     super(props);
     this.state = {
-        description: '',
-        id: '',
-        author: '',
-        publish_date: Date.now(),
-        slug: '',
         content: '',
     }
     this.onChange = this.onChange.bind(this);
@@ -60,7 +55,7 @@ onChange(e) {
 
 CommentForm.propTypes = {
   addComment : PropTypes.func.isRequired,
-  postId: PropTypes.string.isRequired
+  postId: PropTypes.number.isRequired
 }
 
 
